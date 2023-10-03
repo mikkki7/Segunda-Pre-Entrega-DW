@@ -1,0 +1,420 @@
+@font-face{
+    font-family: Merriweather;
+    src: url(../fonts/Merriweather-Regular.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Header*/
+.header{
+    border-bottom: 3px solid #2465aa;
+    grid-area: header;
+}
+
+.contenedor-header{
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    border-radius: 75%;
+    height: 100px;
+    width: 100px;
+    margin-left: 50px;
+}
+
+.lista-header{
+    display: inline-block;
+    list-style-type: none;
+}
+
+.enlaces-header{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.header-derecha{
+    display: flex;
+    margin-top: 20px;
+}
+
+.cuenta{
+    width: 50px;
+    height: 50px;
+    margin-right: 50px;
+}
+
+.compra{
+    width: 50px;
+    height: 50px;
+    margin-right: 50px;
+}
+
+/*Pagina Inicio*/
+.main-index{
+    display: inline-block;
+}
+
+.texto-foto{
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+}
+
+/*Servicios y Productos*/
+.seccion-index{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.texto-foto,
+.texto-foto2{
+    text-align: center;
+}
+
+/*Boton de Ver Mas*/
+.rectangulo2{
+    background-color: white;
+    border: 3px solid #2465aa;
+    height: 50px;
+    width: 250px;
+    margin: 50px 500px;
+    border-radius: 20px;
+} 
+
+.ver_mas{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+.texto-ver-mas{
+    text-align: center;
+    font-weight: 600;
+}
+
+/*Footer*/
+.footer{
+    grid-area: footer;
+    background-color: #7aaaf6;
+    line-height: 30px;
+    border-top: 3px solid #2465aa;
+}
+
+.container-fluid{
+    background-color: #6599e3;
+}
+
+/*Titulos Generales*/
+.titulo{
+    font-size: xx-large;
+    text-align: center;
+    text-decoration: underline;
+    color:#2465aa;
+    margin: 100px 0px;
+}
+
+/*Imagenes Generales*/
+.imagen{
+    border-radius: 15px;
+    border-color: #6599e3;
+    border-style: solid;
+    border-width: 4px;
+}
+
+/*Pagina Productos*/
+.body-productos{
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: 7% auto 10%;
+    grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer"
+    ;
+}
+
+.seccion-productos{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+/*Main*/
+.main-productos{
+    grid-area: main;
+}
+
+/*Aside*/
+.aside{
+    background-color: #6599e3;
+    grid-area: aside;
+    border-right: 3px solid #2465aa;
+}
+
+
+/*Categorias*/
+.contenedor-categorias{
+    margin-top: 110px;
+}
+
+/*Subtitulo Categorias*/
+.subtitulo-cagetorias{
+    margin: 0px 0px 15px 50px;
+    text-decoration: underline;
+}
+
+/*Lista Categorias*/
+.contenedor-lista-categorias{
+    margin-top: 30px;
+}
+
+.lista-categorias{
+    list-style-type: none;
+    color: black;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.texto-categorias{
+    text-decoration: underline;
+    color: rgb(12, 12, 12);
+}
+
+/*Precios*/
+.subtitulo-productos{
+    text-decoration: underline;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.precio-productos{
+    margin-bottom: 50px;
+}
+
+.input-precios{
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-minimo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 3px solid rgb(12, 12, 12);
+}
+
+.input-maximo{
+    border: 3px solid rgb(12, 12, 12);
+}
+
+/*Pagina Servicios*/
+.main-servicios{
+    margin-bottom: 50px;
+}
+
+.main-servicios{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    "texto foto"
+    "foto texto"
+    "texto foto"
+    "foto texto"
+    "texto foto"
+    ;
+}
+
+/*Texto*/
+.subtitulo-servicios{
+    color: #4f88d0;
+    text-decoration: underline;
+    margin-left: 30px;
+}
+
+.texto-servicios{
+    font-size: large;
+    margin-top: 25px;
+    margin: 30px;
+    grid-area: texto;
+}
+
+.imagen{
+    grid-area: imagen;
+}
+
+/*Pagina Contacto*/
+.body-contacto{
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: 10% auto 10%;
+    grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer"
+    ;
+}
+
+.contenedor-formulario{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+/*Texto Formulario*/
+.subtitulos-formulario{
+    color: #4f88d0;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+/*Inputs*/
+.inputs-datos{
+    margin-bottom: 35px;
+}
+
+.ingreso-datos{
+    width: 80%;
+}
+
+/*Boton Enviar*/
+.boton-enviar{
+    margin-top: 35px;
+    margin-left: 75px;
+    display: flex;
+    justify-content: center;
+}
+
+/*Aside*/
+.contenedor-contacto{
+    margin-bottom: 50px;
+}
+
+.titulo-contacto{
+    font-size: xx-large;
+    text-decoration: underline;
+    color:black;
+    margin-top: 50px;
+    margin-left: 35px;
+}
+
+.texto-contacto{
+    font-size: large;
+    line-height: 30px;
+    margin-top: 25px;
+    margin: 30px;
+}
+
+/*Pagina Ubicacion*/
+.contenedor-ubicacion{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.contenedor-TiUb{
+    display: flex;
+    justify-content: start;
+}
+
+/*Texto*/
+.titulo-ubicacion{
+    font-size: xx-large;
+    text-decoration: underline;
+    color:#2465aa;
+}
+
+.subtitulo-ubicacion{
+    font-size: xx-large;
+    text-decoration: underline;
+    color:#2465aa;
+    margin: 0px;
+}
+
+.texto-lista{
+    font-size: large;
+    line-height: 25px;
+    text-align: justify;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+/*Listas y Sublistas Generales*/
+.lista-local{
+    list-style-type:none ;
+}
+
+.sublista-horario{
+    list-style-type:circle ;
+    margin-left: 80px;
+}
+
+/*Iframe General*/
+.iframes{
+    display: flex;
+    justify-content: center;
+}
+
+/*Ubicacion 2*/
+.contenedor-ubicacion-2{
+    margin-bottom: 100px;
+}
+
+/*Media Queries Contacto*/
+@media (min-width: 320px) and (max-width: 480px){
+    .body-contacto{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+        "header"
+        "aside"
+        "main"
+        "footer"
+        ;
+    }
+
+    .boton-enviar{
+        margin-bottom: 60px;
+    }
+}
+
+/*Media Queries Ubicacion*/
+@media (min-width: 320px) and (max-width: 480px){
+    .titulo-ubicacion{
+        font-size: x-large;
+        margin: 10px 0px;
+    }
+    
+    .subtitulo-ubicacion{
+        font-size: x-large;
+        margin: 10px 0px;
+    }
+    
+    .texto-lista{
+        font-size: medium;
+        margin: 15px 30px 25px 0px;
+        text-justify: center;
+    }
+
+    .sublista-horario{
+        margin: 0px;
+    }
+
+    .mapa{
+        height: auto;
+        width: auto;
+    }
+}
