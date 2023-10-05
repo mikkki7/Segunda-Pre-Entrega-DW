@@ -86,8 +86,8 @@
     border: 3px solid #2465aa;
     height: 50px;
     width: 250px;
-    margin: 50px 500px;
     border-radius: 20px;
+    margin: 50px 500px;
 } 
 
 .ver_mas{
@@ -133,13 +133,13 @@
 /*Pagina Productos*/
 .body-productos{
     display: grid;
-    grid-template-columns: 300px auto;
+    grid-template-columns: 25% 75%;
     grid-template-rows: 7% auto 10%;
     grid-template-areas:
     "header header"
     "aside main"
     "footer footer"
-    ;
+    ; 
 }
 
 .seccion-productos{
@@ -147,6 +147,7 @@
     justify-content: space-around;
     gap: 10px;
     margin-left: 20px;
+    flex-wrap: wrap;
 }
 
 /*Main*/
